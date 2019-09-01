@@ -1,0 +1,4 @@
+.idea
+.DS_Store
+/raw-data/wiktionary/pages/*
+/raw-data/wiktionary/parsed/*
