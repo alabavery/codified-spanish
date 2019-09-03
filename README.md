@@ -42,5 +42,6 @@ Additionally, the string 'hacía' has two other usages in Spanish: it is also th
     
     
 <h4>Note on Babel setup</h4>
+
 Babel set up follows [this guide](https://www.robinwieruch.de/minimal-node-js-babel-setup/) and the babel portion of [this guide](https://jestjs.io/docs/en/getting-started), using the babel.config.js set up from the latter rather than the .babelrc setup of the former.
  
