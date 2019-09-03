@@ -1,0 +1,71 @@
+{
+  "abierto": {
+    "data": [
+      {
+        "string": "abierto",
+        "partOfSpeech": "adjective",
+        "words": [
+          [
+            {
+              "dataType": "isLemma",
+              "value": true
+            },
+            {
+              "dataType": "lemma",
+              "value": null
+            },
+            {
+              "dataType": "gender",
+              "value": "masculine"
+            },
+            {
+              "dataType": "isPlural",
+              "value": false
+            },
+            {
+              "dataType": "meanings",
+              "value": []
+            },
+            {
+              "dataType": "wordString",
+              "value": "abierto"
+            }
+          ]
+        ]
+      },
+      {
+        "string": "abierto",
+        "partOfSpeech": "noun",
+        "words": [
+          [
+            {
+              "dataType": "isLemma",
+              "value": true
+            },
+            {
+              "dataType": "lemma",
+              "value": null
+            },
+            {
+              "dataType": "gender",
+              "value": "masculine"
+            },
+            {
+              "dataType": "isPlural",
+              "value": false
+            },
+            {
+              "dataType": "meanings",
+              "value": []
+            },
+            {
+              "dataType": "wordString",
+              "value": "abierto"
+            }
+          ]
+        ]
+      }
+    ],
+    "error": null
+  }
+}

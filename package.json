@@ -1,0 +1,33 @@
+{
+  "name": "codified-spanish",
+  "version": "1.0.0",
+  "description": "a GraphQL API that serves data for Spanish words",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alabavery/codified-spanish.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alabavery/codified-spanish/issues"
+  },
+  "homepage": "https://github.com/alabavery/codified-spanish#readme",
+  "dependencies": {
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.18.0",
+    "spanish-dict-client": "^1.0.2",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0"
+  }
+}
