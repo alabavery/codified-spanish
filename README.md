@@ -4,6 +4,7 @@
 
 
 <h3>Underlying data</h3>
+
 `codified-spanish` is powered by data from [Wiktionary](https://en.wiktionary.org/wiki/Wiktionary:Main_Page) and [SpanishDict](https://www.spanishdict.com/).  The database is populated through scripts in the `/scripts` directory of this repository (see the `README.md` in that directory for details).  When queried for a word not contained in the database, `codified-spanish` will hit Wiktionary or SpanishDict directly.
 <br><br>
 From the perspective of this repository, every word has the following properties:
