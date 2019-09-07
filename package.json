@@ -2,9 +2,9 @@
   "name": "codified-spanish",
   "version": "1.0.0",
   "description": "a GraphQL API that serves data for Spanish words",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "babel-node src/app.js",
+    "start": "webpack; node public/bundle.js",
     "deploy": "scripts/deploy/deploy"
   },
   "repository": {
@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/alabavery/codified-spanish#readme",
   "dependencies": {
+    "core-js": "^3.2.1",
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
     "graphql": "^14.5.4",
@@ -26,8 +27,21 @@
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.5.2",
+    "@babel/plugin-proposal-function-sent": "^7.5.0",
+    "@babel/plugin-proposal-json-strings": "^7.2.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.2.0",
+    "@babel/plugin-syntax-import-meta": "^7.2.0",
+    "@babel/polyfill": "^7.6.0",
     "@babel/preset-env": "^7.5.5",
     "babel-jest": "^24.9.0",
-    "jest": "^24.9.0"
+    "babel-loader": "^8.0.6",
+    "jest": "^24.9.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-node-externals": "^1.7.2"
   }
 }
