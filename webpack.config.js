@@ -15,10 +15,10 @@ module.exports = {
     resolve: {
         extensions: ['.js']
     },
-    // devtool: 'source-map',
-    // watchOptions: {
-    //     ignored: /node_modules/
-    // },
+    devtool: 'source-map',
+    watchOptions: {
+        ignored: /node_modules/
+    },
     externals: [nodeExternals()],
     module: {
         rules: [
