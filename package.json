@@ -17,7 +17,7 @@
     "graphql": "^14.5.4",
     "pg": "^7.12.1",
     "pg-hstore": "^2.3.3",
-    "sequelize": "^5.18.0",
+    "sequelize": "^5.18.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
