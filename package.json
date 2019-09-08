@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node public/bundle.js",
     "build": "webpack -p",
-    "heroku-prebuild": "npm install --dev"
+    "heroku-prebuild": "npm install @babel/core @babel/preset-env babel-loader webpack webpack-cli webpack-node-externals"
   },
   "repository": {
     "type": "git",
@@ -30,5 +30,5 @@
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8",
     "webpack-node-externals": "^1.7.2"
-  }
+  },
 }
