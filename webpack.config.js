@@ -15,7 +15,7 @@ module.exports = {
     resolve: {
         extensions: ['.js']
     },
-    devtool: 'source-map',
+    devtool: 'eval', // was 'source-map'... changed to try to make heroku build faster
     watchOptions: {
         ignored: /node_modules/
     },
