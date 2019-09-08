@@ -7,6 +7,6 @@ app.use('/graphql', graphqlHTTP({
     schema,
     graphiql: true
 }));
-app.listen(4000, () => {
+app.listen(process.env.PORT, () => {
     console.log('Listening...')
 });
