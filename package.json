@@ -19,6 +19,7 @@
     "graphql": "^14.5.4",
     "pg": "^7.12.1",
     "pg-hstore": "^2.3.3",
+    "regenerator-runtime": "^0.13.3",
     "sequelize": "^5.18.0"
   },
   "devDependencies": {
@@ -26,7 +27,6 @@
     "@babel/node": "^7.6.1",
     "@babel/preset-env": "^7.5.5",
     "babel-loader": "^8.0.6",
-    "regenerator-runtime": "^0.13.3",
     "spanish-dict-client": "^1.0.2",
     "uuid": "^3.3.3",
     "webpack": "^4.39.3",
