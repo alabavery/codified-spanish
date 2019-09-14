@@ -14,6 +14,10 @@
   },
   "homepage": "https://github.com/alabavery/codified-spanish#readme",
   "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
     "graphql": "^14.5.4",
@@ -21,17 +25,12 @@
     "pg-hstore": "^2.3.3",
     "regenerator-runtime": "^0.13.3",
     "sequelize": "^5.18.0",
-    "@babel/core": "^7.5.5",
-    "@babel/node": "^7.6.1",
-    "@babel/preset-env": "^7.5.5",
-    "babel-loader": "^8.0.6",
     "spanish-dict-client": "^1.0.2",
     "uuid": "^3.3.3",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "yargs": "^14.0.0"
   },
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }
