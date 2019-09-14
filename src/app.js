@@ -2,7 +2,7 @@ const express = require('express');
 const graphqlHTTP = require('express-graphql');
 import schema from './schema';
 const app = express();
-// const process = require('process');
+const process = require('process');
 
 app.use('/', graphqlHTTP({
     schema,
