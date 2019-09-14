@@ -4,8 +4,8 @@
   "description": "a GraphQL API that serves data for Spanish words",
   "main": "src/index.js",
   "scripts": {
-    "heroku-prebuild": "npm install --only=dev",
-    "start": "webpack-cli -p; node public/bundle.js",
+    "heroku-prebuild": "npm install --only=dev && npm install -g webpack webpack-cli",
+    "start": "webpack -p; node public/bundle.js",
     "start:dev": "babel-node src/index.js"
   },
   "repository": {
