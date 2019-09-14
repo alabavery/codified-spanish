@@ -7,19 +7,19 @@ const isHeroku = !!process.env.DATABASE_URL;
 console.log({dbUrl});
 console.log({isHeroku});
 
-const pgClient = new pg.Client({
-    connectionString: dbUrl,
-    ssl: isHeroku,
-});
-
-pgClient
-    .connect()
-    .then(() => {
-        console.log(`pg client successfully connected to database`);
-    })
-    .catch(err => {
-        console.log(`pg client could not connect to database:`, err);
-    });
+// const pgClient = new pg.Client({
+//     connectionString: dbUrl,
+//     ssl: isHeroku,
+// });
+//
+// pgClient
+//     .connect()
+//     .then(() => {
+//         console.log(`pg client successfully connected to database`);
+//     })
+//     .catch(err => {
+//         console.log(`pg client could not connect to database:`, err);
+//     });
 
 // const sequelize = new Sequelize(dbUrl, {
 //     define: {
