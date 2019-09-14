@@ -1,9 +1,4 @@
-import { Op } from 'sequelize';
-import { Lemma, Word } from "../../models";
-
-export default async function(_, args) {
-    return Word.findAll(buildWhere(args));
-}
+import {Op} from "sequelize";
 
 function buildWhere(whereObj) {
     if (!whereObj || !(Object.keys(whereObj).length)) {
@@ -20,3 +15,5 @@ function buildWhere(whereObj) {
         }, {}),
     };
 }
+
+export default { buildWhere };

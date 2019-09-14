@@ -1,5 +1,5 @@
 /**
- * babel-node scripts/wiktionary/parse-pages/index.js --sourceDirectory=raw-data/wiktionary/pages --targetDirectory=raw-data/wiktionary/parsed/nested --verb=false
+ * babel-node scripts/wiktionary/parse-pages/getWords.js --sourceDirectory=raw-data/wiktionary/pages --targetDirectory=raw-data/wiktionary/parsed/nested --verb=false
  */
 
 import {getParamsFromCommandLine} from "../../utils/command-line-utils";
@@ -10,7 +10,7 @@ import {getPartsOfSpeechValues} from "./parts-of-speech-constants";
 
 const validOptions = {
     // if any part of speech is passed as an option, only those that are passed will be parsed
-    // e.g. babel-node index.js [page paths] --noun=true
+    // e.g. babel-node getWords.js [page paths] --noun=true
     ...getPartsOfSpeechValues().reduce((acc, pos) => ({...acc, [pos]: [true, false]}), {}),
     sourceDirectory: null,
     save: [false], // will save unless false flag passed

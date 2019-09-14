@@ -4,8 +4,6 @@ const isDev = process.env.NODE_ENV === 'development';
 module.exports = {
     mode: isDev ? 'development' : 'production',
     entry: [
-        // 'core-js',
-        // '@babel/polyfill', // enables async-await
         './src/index.js'
     ],
     output: {
@@ -26,12 +24,6 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader', //
-                // use: {
-                //     loader: 'babel-loader',
-                //     // options: {
-                //     //     presets: ['@babel/preset-env']
-                //     // }
-                // }
             }
         ]
     }
