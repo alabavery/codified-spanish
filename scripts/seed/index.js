@@ -19,6 +19,10 @@ if (require.main === module) {
 }
 
 async function resolveSourceFiles(sourceDirectory, args) {
+    const filePaths = sourceDirectory ? await getAllFileNamesFromDirectory(sourceDirectory, true) : args;
+    if (!filePaths || !filePaths.length) {
+        logAndExit(`Received no files to seed from!`);
+    }
     return sourceDirectory ? await getAllFileNamesFromDirectory(sourceDirectory, true) : args;
 }
 
