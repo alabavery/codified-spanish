@@ -19,7 +19,7 @@ const sequelize = new Sequelize('postgres://juwfhddomnoezp:f9db989b90cbefb145aff
         // don't add an "s" to table name
         freezeTableName: true,
     },
-    // "ssl": true,
+    "ssl": true,
     // "dialectOptions": { "ssl": true }
 });
 
