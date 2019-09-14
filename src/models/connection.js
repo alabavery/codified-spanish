@@ -4,6 +4,9 @@ import Sequelize from 'sequelize';
 const dbUrl = process.env.DATABASE_URL || `postgres://alavery:''@localhost:5432/codified-spanish`;
 const isHeroku = !!process.env.DATABASE_URL;
 
+console.log({dbUrl});
+console.log({isHeroku});
+
 const pgClient = new pg.Client({
     connectionString: dbUrl,
     ssl: isHeroku,
