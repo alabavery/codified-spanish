@@ -1,13 +1,15 @@
 import Sequelize from 'sequelize';
+// you must explicitly import process in any file you use it in
+// order for heroku to use it correctly.
 const process = require('process');
 
 const dbUrl = process.env.DATABASE_URL || `postgres://alavery:''@localhost:5432/codified-spanish`;
 const isHeroku = !!process.env.DATABASE_URL;
 
-console.log({dbUrl});
-console.log({isHeroku});
+if (!isHeroku) {
+    console.log(`app did not obtain a environmental variable of DATABASE_URL`);
+}
 
-// 'postgres://juwfhddomnoezp:f9db989b90cbefb145aff0dbc50f7ec243de9f4b7eb2756061d56aa762ed5b2c@ec2-54-83-9-36.compute-1.amazonaws.com:5432/dd3am2e2dguhs1'
 
 const sequelize = new Sequelize(dbUrl, {
     dialect:  'postgres',

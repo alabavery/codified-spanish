@@ -10,7 +10,13 @@ app.use('/', graphqlHTTP({
     schema,
     graphiql: true
 }));
-const port = process.env.PORT || 4000;
+
+const herokuPort = process.env.PORT;
+if (!herokuPort) {
+    console.log(`app did not receive an environmental var of PORT`);
+}
+
+const port = herokuPort || 4000;
 app.listen(port, () => {
     console.log(`Listening on port ${port} ...`)
 });
