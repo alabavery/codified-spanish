@@ -11,8 +11,6 @@ const sequelize = new Sequelize('codified-spanish', 'alavery', '', {
     },
 });
 const sequelize = new Sequelize(`postgres://juwfhddomnoezp:f9db989b90cbefb145aff0dbc50f7ec243de9f4b7eb2756061d56aa762ed5b2c@ec2-54-83-9-36.compute-1.amazonaws.com:5432/dd3am2e2dguhs1?sslmode=require`, {
-    dialect:  'postgres',
-    protocol: 'postgres',
     define: {
         // camelCase -> snake_case
         underscored: true,
