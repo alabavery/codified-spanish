@@ -46,7 +46,6 @@ const sequelize = new Sequelize('postgres://juwfhddomnoezp:f9db989b90cbefb145aff
     "dialectOptions": { "ssl": true }
 });
 
-
 sequelize
     .authenticate()
     .then(() => {
