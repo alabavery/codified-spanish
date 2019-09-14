@@ -4,7 +4,7 @@
   "description": "a GraphQL API that serves data for Spanish words",
   "main": "src/index.js",
   "scripts": {
-    "heroku-prebuild": "npm install --only=dev && npm install -g webpack webpack-cli",
+    "heroku-prebuild": "npm install && npm install -g webpack webpack-cli",
     "start": "webpack -p; node public/bundle.js",
     "start:dev": "babel-node src/index.js"
   },
@@ -20,9 +20,7 @@
     "pg": "^7.12.1",
     "pg-hstore": "^2.3.3",
     "regenerator-runtime": "^0.13.3",
-    "sequelize": "^5.18.0"
-  },
-  "devDependencies": {
+    "sequelize": "^5.18.0",
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.6.1",
     "@babel/preset-env": "^7.5.5",
@@ -32,5 +30,8 @@
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8",
     "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+
   }
 }
