@@ -19,8 +19,8 @@ const sequelize = new Sequelize(process.env.DATABASE_URL, {
         // don't add an "s" to table name
         freezeTableName: true,
     },
-    "ssl": true,
-    "dialectOptions": { "ssl": true }
+    // "ssl": true,
+    // "dialectOptions": { "ssl": true }
 });
 
 sequelize
