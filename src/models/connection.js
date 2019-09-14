@@ -1,4 +1,3 @@
-import pg from 'pg';
 import Sequelize from 'sequelize';
 
 const dbUrl = process.env.DATABASE_URL || `postgres://alavery:''@localhost:5432/codified-spanish`;
