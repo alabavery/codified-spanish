@@ -3,8 +3,8 @@ import Sequelize from 'sequelize';
 // order for heroku to use it correctly.
 const process = require('process');
 
-const dbUrl = process.env.DATABASE_URL || `postgres://alavery:''@localhost:5432/codified-spanish`;
-const isHeroku = !!process.env.DATABASE_URL;
+const dbUrl = process.env.HEROKU_POSTGRESQL_WHITE_URL || `postgres://alavery:''@localhost:5432/codified-spanish`;
+const isHeroku = !!process.env.HEROKU_POSTGRESQL_WHITE_URL;
 
 if (!isHeroku) {
     console.log(`app did not obtain a environmental variable of DATABASE_URL`);
