@@ -7,7 +7,7 @@ const dbUrl = process.env.HEROKU_POSTGRESQL_WHITE_URL || `postgres://alavery:''@
 const isHeroku = !!process.env.HEROKU_POSTGRESQL_WHITE_URL;
 
 if (!isHeroku) {
-    console.log(`app did not obtain a environmental variable of DATABASE_URL`);
+    console.log(`app did not obtain a environmental variable of HEROKU_POSTGRESQL_WHITE_URL`);
 }
 
 
